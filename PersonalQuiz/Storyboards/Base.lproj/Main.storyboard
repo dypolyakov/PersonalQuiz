@@ -248,12 +248,6 @@
                             <constraint firstItem="c2T-Zl-yik" firstAttribute="leading" secondItem="5Ni-5r-424" secondAttribute="leading" constant="16" id="vFP-FW-HJL"/>
                             <constraint firstItem="duN-Ea-84t" firstAttribute="centerY" secondItem="Fz2-NW-Fa4" secondAttribute="centerY" id="zgl-1x-t8r"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="ZHP-Gv-dVv"/>
-                                <exclude reference="duN-Ea-84t"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Вопрос №" id="mZX-cQ-KYO">
                         <barButtonItem key="rightBarButtonItem" title="Item" id="S5a-jC-XR6">
