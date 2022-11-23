@@ -95,6 +95,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Вопрос №" id="mZX-cQ-KYO"/>
+                    <connections>
+                        <segue destination="wIr-s7-hDM" kind="show" identifier="showResult" id="uyf-PX-79X"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uj2-4M-pwU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -117,6 +120,46 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NlP-WE-ig4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="920.79999999999995" y="-35.532233883058474"/>
+        </scene>
+        <!--Результат-->
+        <scene sceneID="pul-hc-sM1">
+            <objects>
+                <viewController id="wIr-s7-hDM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kcA-f5-eGl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cKq-Rr-cCO">
+                                <rect key="frame" x="16" y="284" width="343" height="99.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы - 🐙" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ip0-jW-ENS">
+                                        <rect key="frame" x="91.5" y="0.0" width="160.5" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы осьминог!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YmF-3y-Wim">
+                                        <rect key="frame" x="91.5" y="68" width="160" height="31.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eWs-0p-yPl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cKq-Rr-cCO" firstAttribute="leading" secondItem="eWs-0p-yPl" secondAttribute="leading" constant="16" id="9Hj-cL-aTv"/>
+                            <constraint firstItem="cKq-Rr-cCO" firstAttribute="centerY" secondItem="kcA-f5-eGl" secondAttribute="centerY" id="sMu-mW-Wx8"/>
+                            <constraint firstItem="eWs-0p-yPl" firstAttribute="trailing" secondItem="cKq-Rr-cCO" secondAttribute="trailing" constant="16" id="w2Y-8g-liU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Результат" id="LEQ-Ln-qyV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aDZ-3A-F6u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2762" y="-36"/>
         </scene>
     </scenes>
     <resources>
