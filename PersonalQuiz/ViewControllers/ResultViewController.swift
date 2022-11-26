@@ -35,7 +35,12 @@ class ResultViewController: UIViewController {
     private func identifyAnimal(from answers: [Answer]) -> Animal {
         let animals = answers.map { $0.animal }
         
-        return animals[0]
+        let animalsCount = animals.reduce(into: [:]) { partialResult, animal in
+            partialResult[animal, default: 0] += 1
+        }
+        
+        let animal = animalsCount.max { a, b in a.value < b.value }?.key
+        return animal ?? .dog
     }
     
     private func showResult(for animal: Animal) {
