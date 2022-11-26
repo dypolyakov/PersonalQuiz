@@ -40,6 +40,7 @@ class ResultViewController: UIViewController {
         }
         
         let animal = animalsCount.max { a, b in a.value < b.value }?.key
+        
         return animal ?? .dog
     }
     
